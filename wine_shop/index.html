@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <!-- Google Font Link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+
+        <!-- Files Included -->
+        <link rel="stylesheet" href="./includes/CSS/style.css" />
+        <link rel="stylesheet" href="./includes/CSS/media.css" />
+        <link rel="stylesheet" href="./includes/js/scriot.js" />
+    </head>
+    <body>
+        <div class="content">
+
+            <div class="nav-menu">
+
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="./images/table_logo.jpg" alt="logo" />
+                    </a>
+                </h1>
+
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="material-icons"> event_available </span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <span class="material-icons"> restaurant </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="material-icons"> contact_page </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <div class="setting">
+                    <a href="#">
+                        <span class="material-icons"> settings </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-data" id="product-data">
+
+                <div class="head" id="product-data-head">
+                    <div class="title">
+                        <h3>The Great Table</h3>
+                        <select name="" id="">
+                            <option>Today</option>
+                            <option>Tommorow</option>
+                        </select>
+                    </div>
+                    <div class="search">
+                        <input type="text" id="search-box" placeholder="Search" />
+                        <label class="material-icons" for="search-box"> search </label>
+                    </div>
+                </div>
+
+                <div class="bottom" id="product-data-bottom">
+                    <div class="product-section" id="product-section">
+                        <div class="product-tabbing">
+                            <div class="table-name" id="table-name">Table <span>5 - Mrs.Einstien</span></div>
+
+                            <div class="tab-buttons-container" id="tab-buttons-container">
+                                <ul class="switch-product-tab">
+                                    <li class="active drinks-tab" data-catagory="Drinks">Drinks</li>
+                                    <li class="food-tab" data-catagory="Food">Food</li>
+                                    <li class="dessert-tab" data-catagory="Dessert">Dessert</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        
+                        <div class="tab-section" id="tab-section">
+                            <div class="active tab-content" data-catagory="Drinks" id="drinks">
+                            </div>
+                            <div class="tab-content" data-catagory="Food" id="food">
+                            </div>
+                            <div class="tab-content" data-catagory="Dessert" id="desert">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="bill-section" id="bill-section">
+                        <div class="split-title">
+                            <div class="split-check" id="split-check">
+                                <span class="name">split check</span>
+                                <div class="on-off" id="toggle-split">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <h4>Check</h4>
+                            </div>
+                        </div>
+                        <div class="product-pay-container" id="product-pay-container">
+                            <div class="top-pay">
+                                <div class="product-for-buy">
+                                    
+                                </div>
+                                <div class="pay-section">
+                                    <ul>
+                                        <li>
+                                            <span class="tag">Subtotal</span>
+                                            <span class="amount subtotal">$0</span>
+                                        </li>
+                                        <li>
+                                            <span class="tag">Estimated Taxes</span>
+                                            <span class="amount tax">$0</span>
+                                        </li>
+                                        <li>
+                                            <span class="tag">Discount</span>
+                                            <span class="amount discount">$0</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pay-button">
+                                <button class="">PAY $0</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="toggle-button material-icons" id="toggle-bill"> receipt </div>
+        <script src="./includes/js/script.js"></script>
+        <!-- <script src="./includes/js/script2.js"></script> -->
+    </body>
+</html>
