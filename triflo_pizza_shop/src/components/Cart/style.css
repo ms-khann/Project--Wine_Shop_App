@@ -1,0 +1,112 @@
+.inner-cart{
+    padding: 30px 0;
+}
+.inner-cart ul{
+    list-style-type: none;
+}
+.single-cart-content .name{
+    margin-bottom: 10px;
+    color:#f6892e;
+    font-size: 1.3rem;
+}
+.single-cart-content{
+    display: flex;
+    padding: 30px 10px 40px 10px;
+    border-bottom: 1px solid #686b78;;
+}
+.single-cart-content .img{
+    width: 20%;
+}
+.single-cart-content .img img{
+    max-width: 100%;
+}
+
+.size-and-toppings li{
+    padding: 3px 0;
+}
+.size-and-toppings span{
+    width: 33.33%;
+    display: inline-block;
+    word-break: break-all;
+    vertical-align: top;
+    text-align: right;
+}
+.size-and-toppings li:first-child span{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.size-and-toppings span:last-child{
+}
+.size-and-toppings .size{
+    text-align: left;
+}
+.size-and-toppings .toppings{
+    padding: 0 10px;
+}
+.size-and-toppings .toppings{
+}
+.single-cart-content .details{
+    flex-grow: 1;
+    padding: 5px 15px;
+}
+.single-cart-content .subtotal{
+    text-align: right;
+    display: block;
+    padding: 15px 0;
+    padding-bottom: 0;
+    font-weight: 700;
+    color: #f6892e;
+}
+
+.shop-title{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+.cart-content .foot{
+    padding: 15px 10px;
+}
+.grand-total{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.checkout{
+    transition: all .3s;
+    background-color: #48c479;
+    margin-left: auto;
+    display: block;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.2rem;
+    border:none;
+    cursor:pointer;
+}
+.checkout:hover{
+    box-shadow: 0 4px 7px 0 rgba(218, 220, 230, 0.6);
+}
+
+@media only screen and (max-width:425px){
+    .single-cart-content{
+        flex-wrap: wrap;
+    }
+    .single-cart-content .img{
+        width: 100%;
+    }
+    .single-cart-content .details{
+        padding: 10px 0;
+    }
+    .size-and-toppings span{
+        width: 50%;
+    }
+    .size-and-toppings .price{
+        display: none;
+    }
+    .size-and-toppings .toppings{
+        padding-right: 0;
+    }
+    .checkout{
+        width: 100%;
+    }
+    .popup{
+        max-width: 80%;
+    }
+}

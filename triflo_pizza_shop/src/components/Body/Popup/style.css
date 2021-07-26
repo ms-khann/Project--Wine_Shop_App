@@ -1,0 +1,140 @@
+/* Modal Popup */
+.popup{
+	background-color: #fff;
+    padding: 20px;
+    max-width: 60%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+	max-height: 90vh;
+	overflow: auto;
+    z-index: 101;
+}
+.popup-head .title{
+	padding-bottom: 20px;
+	font-size: 1.4rem;
+	padding-right: 30px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.popup-body .title{
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #93959f;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-size: 1.3rem;
+}
+.size-list label{
+	display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.custom{
+	position: relative;
+	display: block;
+	padding: 5px 0;
+	padding-left: 30px;
+	cursor: pointer;
+}
+.custom input{
+	display: none;
+}
+.custom .radio,
+.custom .checkbox{
+	height: 14px;
+	width: 14px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	border: 1px solid #93959f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.custom-radio .radio{
+	border-radius: 50%;
+}
+.custom .radio::after{
+	content: '';
+	display: none;
+	height: 50%;
+	width: 50%;
+	background: #60b246;
+	border-radius: 50%;
+}
+
+
+.custom .checkbox::after{
+	content: '';
+	display: none;
+	left: 9px;
+    top: 5px;
+    width: 2px;
+    height: 6px;
+    border: 1px solid #60b246;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+.custom input:checked+.radio::after,
+.custom input:checked+.checkbox::after{
+	display: block;
+}
+.popup-content{
+	display: flex;
+}
+.popup-content>div{
+	width: 50%;
+	padding: 0 10px;
+}
+.popup .close{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.popup .close svg{
+}
+.add-to-cart{
+	padding: 10px;
+	display: block;
+	border: none;
+	outline: none;
+	color: #fff;
+	text-align: center;
+	font-size: 1.2rem;
+	background-color: #60b246;
+	width: 100%;
+	margin-top: 5px;
+}
+.btn-and-err{
+	margin-top: 15px;
+}
+.btn-and-err .err{
+	display: block;
+	color: red;
+	text-transform: capitalize;
+	font-size: 0.9rem;
+}
+
+@media only screen and (max-width:425px) {
+	.popup-content{
+		flex-wrap: wrap;
+	}
+	.popup-content>div{
+		width: 100%;
+		margin: 10px 0;
+	}
+	.popup-head .title{
+		padding-bottom: 10px;
+	}
+}

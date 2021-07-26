@@ -1,0 +1,36 @@
+header{
+    background-color: black;
+}
+header>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.logo{
+    width: 80px;
+}
+.logo img{
+    max-width: 100%;
+}
+h1{
+    margin: 0;
+}
+.cartIcon{
+    position: relative;
+}
+.cartIcon .MuiSvgIcon-root{
+    font-size: 2rem;
+    color: #f6892e;
+    cursor: pointer;
+}
+.cart-item-count{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%,-50%);
+    background: #fff;
+    padding:  0 5px;
+    border-radius: 50%;
+    font-size: 1rem;
+}
